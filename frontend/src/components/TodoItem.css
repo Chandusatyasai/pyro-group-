@@ -1,0 +1,152 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s;
+}
+
+.todo-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+  background: #f9f9f9;
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-content {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.todo-description {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.todo-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.edit-button {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.edit-button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.delete-button {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.delete-button:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.todo-item.editing {
+  padding: 15px;
+}
+
+.edit-form {
+  width: 100%;
+}
+
+.edit-input,
+.edit-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.edit-input:focus,
+.edit-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-button {
+  background: #28a745;
+  color: white;
+}
+
+.save-button:hover {
+  background: #218838;
+}
+
+.cancel-button {
+  background: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background: #5a6268;
+}
+
